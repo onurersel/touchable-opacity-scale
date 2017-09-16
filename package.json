@@ -1,0 +1,22 @@
+{
+  "name": "touchable-opacity-scale",
+  "version": "1.0.0",
+  "description": "React Native package which adds scale animation to TouchableOpacity component.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react-native",
+    "touchable",
+    "touchableopacity",
+    "scaling",
+    "button"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/onurersel/touchable-opacity-scale.git"
+  },
+  "author": "Onur Ersel <onurersel@gmail.com>",
+  "license": "MIT"
+}
