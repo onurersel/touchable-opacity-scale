@@ -30,12 +30,14 @@ class TouchableOpacityScale extends React.Component {
 	}
 	
 	render() {
+		const {style, ...rest} = this.props
 		const scaleStyle = {transform: [{scale:this._avScale}]}
 		return (
 			<TouchableOpacity
+				{...rest}
 				onPressIn={this._inHandler}
 				onPressOut={this._outHandler}
-				style={[this.props.style, scaleStyle]}>
+				style={[style, scaleStyle]} >
 				{this.props.children}
 			</TouchableOpacity>
 		)
