@@ -19,6 +19,10 @@ class TouchableOpacityScale extends React.Component {
 			duration: 50,
 			useNativeDriver: true,
 		}).start()
+
+		if (this.props.onPressIn) {
+			this.props.onPressIn()
+		}
 	}
 	
 	_outHandler() {
@@ -27,6 +31,10 @@ class TouchableOpacityScale extends React.Component {
 			duration: 80,
 			useNativeDriver: true,
 		}).start()
+
+		if (this.props.onPressOut) {
+			this.props.onPressOut()
+		}
 	}
 	
 	render() {
